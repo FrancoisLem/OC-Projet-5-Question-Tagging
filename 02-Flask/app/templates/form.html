@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="margin-left:20px"> 
+
+<h2>Please write your question</h2>
+    <form action="/result/" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        
+        <p>
+            {{ form.titre.label }}<br>
+            {{ form.titre(cols=50, rows=2) }}
+        </p>
+        
+        <p>
+            {{ form.question.label }}<br>
+            {{ form.question(cols=70, rows=8) }}
+        </p>
+ <br> 
+ 
+         <p>{{ form.submit() }}</p>
+        
+    </form>
+</div> 
+{% endblock %}
+
+</html>

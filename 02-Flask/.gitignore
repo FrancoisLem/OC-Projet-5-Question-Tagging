@@ -1,0 +1,6 @@
+env/
+*.pyc
+__pycache__
+fbapp/static/tmp/*.jpg
+.cache/
+fbapp/tests/*.db
